@@ -31,7 +31,7 @@ function HomeScreen({ navigation }) {
           }
         })
         .catch(function (error) {
-          alert("Wrong Email | Password... Try Again");
+          alert(error + "Wrong Email | Password... Try Again");
         });
     }
   }
