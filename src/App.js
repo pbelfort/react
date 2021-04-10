@@ -26,6 +26,7 @@ function HomeScreen({ navigation }) {
             //console.log(res);
             //console.log(res.data.access_token);
             navigation.navigate("DetailsScreen");
+            alert(res.data.access_token);
             console.log(res.data.access_token);
           }
         })
@@ -65,7 +66,7 @@ function DetailsScreen({ navigation }) {
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text> Entrou!!! </Text>
       <Button
-        title="Go to Home"
+        title="Leave Session"
         onPress={() => navigation.navigate("HomeScreen")}
       />
     </View>
